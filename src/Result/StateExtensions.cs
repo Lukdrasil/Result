@@ -1,4 +1,4 @@
-﻿namespace Mannaz.Result;
+﻿namespace ElvenScript.Result;
 
 public static class StateExtensions
 {

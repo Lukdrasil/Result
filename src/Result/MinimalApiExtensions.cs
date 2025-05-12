@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace Mannaz.Result;
+namespace ElvenScript.Result;
 
 public static partial class MinimalApiExtensions
 {

@@ -1,4 +1,4 @@
-namespace Mannaz.Result.Tests;
+namespace ElvenScript.Result.Tests;
 
 public class ResultExtensionsTests
 {

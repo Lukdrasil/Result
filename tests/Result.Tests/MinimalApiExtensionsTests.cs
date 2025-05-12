@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http.HttpResults;
 
-namespace Mannaz.Result.Tests;
+namespace ElvenScript.Result.Tests;
 
 public class MinimalApiExtensionsTests
 {

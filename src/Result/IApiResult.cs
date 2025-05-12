@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Mannaz.Result;
+namespace ElvenScript.Result;
 
 public interface IApiResult<T, TError> : IResult<T, TError>
 {

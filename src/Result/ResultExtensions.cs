@@ -1,6 +1,6 @@
-﻿using Mannaz.Result;
+﻿using ElvenScript.Result;
 
-namespace Mannaz.Result;
+namespace ElvenScript.Result;
 
 
 public static class ResultExtensions
