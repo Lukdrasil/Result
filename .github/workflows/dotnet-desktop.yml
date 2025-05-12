@@ -1,0 +1,46 @@
+name: Build, Test and Publish NuGet Package
+
+on:
+  push:
+    tags:
+      - 'v*'  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0'
+      - name: Restore dependencies
+        run: dotnet restore ./src/Result/Result.csproj
+      - name: Build project
+        run: dotnet build --configuration Release --no-restore ./src/Result/Result.csproj
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0'
+      - name: Run unit tests
+        run: dotnet test --configuration Release --no-build --verbosity normal ./tests/Result.Tests/Result.Tests.csproj
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0'
+      - name: Pack NuGet package
+        run: dotnet pack --configuration Release ./src/Result/Result.csproj
+      - name: Publish to NuGet
+        run: dotnet nuget push bin/Release/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
