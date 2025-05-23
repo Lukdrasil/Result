@@ -2,7 +2,7 @@
     
     <PropertyGroup>
         <PackageId>ElvenScript.Result</PackageId>
-        <Version>0.0.2-beta</Version>
+        <Version>0.0.3-beta</Version>
         <Authors>Lukáš Drábek</Authors>
         <Description></Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
