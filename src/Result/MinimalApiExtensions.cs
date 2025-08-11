@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace ElvenScript.Result;
+namespace Lukdrasil.Result;
 
 public static partial class MinimalApiExtensions
 {

@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace ElvenScript.Result.Tests;
+namespace Lukdrasil.Result.Tests;
 
 public class ResultVoidExtensionsTests
 {

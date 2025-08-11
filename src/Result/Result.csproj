@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     
     <PropertyGroup>
-        <PackageId>ElvenScript.Result</PackageId>
-        <Version>0.0.3-beta</Version>
+        <PackageId>Lukdrasil.Result</PackageId>
+        <Version>1.0.0</Version>
         <Authors>Lukáš Drábek</Authors>
         <Description></Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <RepositoryUrl>https://github.com/ElvenScript/Result</RepositoryUrl>
+        <RepositoryUrl>https://github.com/Lukdrasil/Result</RepositoryUrl>
     </PropertyGroup>
 
 
     <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>

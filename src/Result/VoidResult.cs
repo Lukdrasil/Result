@@ -1,3 +1,3 @@
-﻿namespace ElvenScript.Result;
+﻿namespace Lukdrasil.Result;
 
 public record struct VoidResult();

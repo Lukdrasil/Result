@@ -1,4 +1,4 @@
-﻿namespace ElvenScript.Result;
+﻿namespace Lukdrasil.Result;
 
 public interface IResult<T, TError>
 {

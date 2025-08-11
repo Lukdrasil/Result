@@ -1,4 +1,4 @@
-# ElvenScript.Result
+# Lukdrasil.Result
 
 [![.NET](https://img.shields.io/badge/.NET-8.0-blue)](https://dotnet.microsoft.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -18,10 +18,10 @@ A modern, extensible, and strongly-typed Result type for .NET, designed for func
 ## Getting Started
 
 1. **Install**
-dotnet add package ElvenScript.Result
+dotnet add package Lukdrasil.Result
 2. **Basic Usage**
 ```csharp
-using ElvenScript.Result;
+using Lukdrasil.Result;
 
 Result<int, string> Divide(int a, int b)
     => b == 0 ? Result<int, string>.Failure("Division by zero") : Result<int, string>.Success(a / b);

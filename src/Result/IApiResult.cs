@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ElvenScript.Result;
+namespace Lukdrasil.Result;
 
 public interface IApiResult<T, TError> : IResult<T, TError>
 {

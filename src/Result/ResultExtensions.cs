@@ -1,6 +1,6 @@
-﻿using ElvenScript.Result;
+﻿using Lukdrasil.Result;
 
-namespace ElvenScript.Result;
+namespace Lukdrasil.Result;
 
 public static class ResultExtensions
 {

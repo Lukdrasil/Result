@@ -1,4 +1,4 @@
-﻿namespace ElvenScript.Result;
+﻿namespace Lukdrasil.Result;
 
 public static class StateExtensions
 {
